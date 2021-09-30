@@ -1,4 +1,4 @@
-import { add, sub, mult } from './calculations.js';
+import { add, sub, mult, div } from './calculations.js';
 
 // import functions and grab DOM elements
 
@@ -9,7 +9,7 @@ const output = document.getElementById('output');
 const addButton = document.getElementById('add-button');
 const subButton = document.getElementById('sub-button');
 const multButton = document.getElementById('mult-button');
-
+const divButton = document.getElementById('div-button');
 
 //console.log(addInput1, addInput2, addOutput, addButton);
 
@@ -31,5 +31,12 @@ multButton.addEventListener('click', () => {
     const value1 = Number(input1.value);
     const value2 = Number(input2.value);
     const result = mult(value1, value2);
+    output.textContent = result;
+});
+
+divButton.addEventListener('click', () => {
+    const value1 = Number(input1.value);
+    const value2 = Number(input2.value);
+    const result = div(value1, value2);
     output.textContent = result;
 });
