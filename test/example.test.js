@@ -1,6 +1,6 @@
 // IMPORT MODULES under test here:
 
-import { addTwo, add } from '../calculations.js';
+import { addTwo, add, sub } from '../calculations.js';
 
 // import { example } from '../example.js';
 
