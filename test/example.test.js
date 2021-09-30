@@ -27,20 +27,20 @@ test('add function', (expect) => {
     const input2 = 2;
     const expected = 5;
 
-    //Act
+    //Actual
     const actual = add(input1, input2);
 
     expect.equal(actual, expected, 'adder test');
 });
 
-test('add(4, 5)', (expect) => {
+test('sub function', (expect) => {
     //Arrange
-    const input1 = 4;
-    const input2 = 5;
-    const expected = 9;
+    const input1 = 5;
+    const input2 = 3;
+    const expected = 2;
 
-    //Act
-    const actual = add(input1, input2);
+    //Actual
+    const actual = sub(input1, input2);
 
-    expect.equal(actual, expected, 'adder test');
+    expect.equal(actual, expected, 'subtract test');
 });
