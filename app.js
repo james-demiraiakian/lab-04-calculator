@@ -1,4 +1,4 @@
-import { add, sub } from './calculations.js';
+import { add, sub, mult } from './calculations.js';
 
 // import functions and grab DOM elements
 
@@ -32,4 +32,4 @@ multButton.addEventListener('click', () => {
     const value2 = Number(input2.value);
     const result = mult(value1, value2);
     output.textContent = result;
-}
+});

@@ -1,6 +1,6 @@
 // IMPORT MODULES under test here:
 
-import { addTwo, add, sub } from '../calculations.js';
+import { addTwo, add, sub, mult } from '../calculations.js';
 
 // import { example } from '../example.js';
 
@@ -43,4 +43,14 @@ test('sub function', (expect) => {
     const actual = sub(input1, input2);
 
     expect.equal(actual, expected, 'subtract test');
+});
+
+test('mult function', (expect) => {
+    const input1 = 2;
+    const input2 = 4;
+    const expected = 8;
+
+    const actual = mult(input1, input2);
+
+    expect.equal(actual, expected, 'multiplication test');
 });
