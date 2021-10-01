@@ -1,4 +1,4 @@
-import { add, sub, mult, div } from './calculations.js';
+import { add, sub, mult, div, mod, intDiv, triHyp, coneVol } from './calculations.js';
 
 // import functions and grab DOM elements
 
@@ -10,6 +10,10 @@ const addButton = document.getElementById('add-button');
 const subButton = document.getElementById('sub-button');
 const multButton = document.getElementById('mult-button');
 const divButton = document.getElementById('div-button');
+const modButton = document.getElementById('mod-button');
+const intDivButton = document.getElementById('int-div-button');
+const triHypButton = document.getElementById('tri-hyp-button');
+const coneVolButton = document.getElementById('cone-vol-button');
 
 //console.log(addInput1, addInput2, addOutput, addButton);
 
@@ -38,5 +42,33 @@ divButton.addEventListener('click', () => {
     const value1 = Number(input1.value);
     const value2 = Number(input2.value);
     const result = div(value1, value2);
+    output.textContent = result;
+});
+
+modButton.addEventListener('click', () => {
+    const value1 = Number(input1.value);
+    const value2 = Number(input2.value);
+    const result = mod(value1, value2);
+    output.textContent = result;
+});
+
+intDivButton.addEventListener('click', () => {
+    const value1 = Number(input1.value);
+    const value2 = Number(input2.value);
+    const result = intDiv(value1, value2);
+    output.textContent = result;
+});
+
+triHypButton.addEventListener('click', () => {
+    const value1 = Number(input1.value);
+    const value2 = Number(input2.value);
+    const result = triHyp(value1, value2);
+    output.textContent = result;
+});
+
+coneVolButton.addEventListener('click', () => {
+    const value1 = Number(input1.value);
+    const value2 = Number(input2.value);
+    const result = coneVol(value1, value2);
     output.textContent = result;
 });
